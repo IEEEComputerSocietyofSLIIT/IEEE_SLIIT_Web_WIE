@@ -13,13 +13,13 @@ export default function About() {
 
             <div class="container mx-auto px-4 mt-16">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-                    <div class="flex flex-col items-center justify-center space-y-6 p-10 bg-gray-200 rounded-xl">
+                    <div class="flex flex-col items-center justify-center space-y-6 p-10 bg-gray-300 rounded-xl">
                         <h3 class="text-3xl font-bold text-primary">Our Vision</h3>
                         <p class="text-gray-600 text-md text-center">Facilitate the recruitment and retention of women in technical disciplines globally. We envision a vibrant community of IEEE women and men collectively using their diverse talents to innovate for the benefit of humanity.
                         </p>
                     </div>
 
-                    <div class="flex flex-col items-center justify-center space-y-6 p-10 bg-gray-200 rounded-xl">
+                    <div class="flex flex-col items-center justify-center space-y-6 p-10 bg-gray-300 rounded-xl">
                         <h3 class="text-3xl font-bold text-primary">Our Mission</h3>
                         <p class="text-gray-600 text-md text-center">To connect, support, and inspire women and girls worldwide, and facilitate their recruitment and retention in STEM fields, fostering technological innovation and excellence for the benefit of humanity.
                         </p>
