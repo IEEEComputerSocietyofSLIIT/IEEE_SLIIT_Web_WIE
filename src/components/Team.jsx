@@ -19,22 +19,22 @@ export default function Team() {
                 {/* <p class=" text-gray-600 text-md text-center max-w mb-10"></p> */}
                 <div class="mx-auto flex align-middle justify-center">
                     <article class="w-full md:w-[800px] md:items-center md:flex grid rounded-xl bg-white p-3 shadow-lg hover:shadow-xl hover:scale-110 transform translate duration-300">
-                            <div class="relative w-full flex items-end overflow-hidden rounded-xl">
-                                <img src={Dasuni} alt="Hotel Photo" className="w-full " />
+                        <div class="relative w-full flex items-end overflow-hidden rounded-xl">
+                            <img src={Dasuni} alt="Hotel Photo" className="w-full " />
 
-                            </div>
+                        </div>
 
-                            <div class="mt-1 p-2 md:p-10">
-                                <h2 class="text-gray-900 font-semibold text-lg">Ms. Dasuni Nawinna</h2>
-                                <p class="text-primary mt-1 text-sm font-semibold ">Associate Dean (Research), Faculty of Computing, SLIIT Assistant Professor, Department of ISE, Faculty of Computing - SLIIT (Sept 2020-Present) Program Coordinator – BSc Hons IT Sp. in Information Systems Engineering (Jan 2019 to present)</p>
+                        <div class="mt-1 p-2 md:p-10">
+                            <h2 class="text-gray-900 font-semibold text-lg">Ms. Dasuni Nawinna</h2>
+                            <p class="text-primary mt-1 text-sm font-semibold ">Associate Dean (Research), Faculty of Computing, SLIIT Assistant Professor, Department of ISE, Faculty of Computing - SLIIT (Sept 2020-Present) Program Coordinator – BSc Hons IT Sp. in Information Systems Engineering (Jan 2019 to present)</p>
 
 
-                            </div>
+                        </div>
                     </article>
                 </div>
             </section>
             <section class="max-w-screen-2xl px-10 mx-auto mb-32">
-                
+
 
                 <h1 class="my-3 text-center font-sans text-4xl font-bold text-primary">Current executive board<span class="text-black">.</span></h1>
                 <p class=" text-gray-600 text-md text-center max-w mb-10">The Executive Board of IEEE WIE Affinity Group 2023/24 of SLIIT.</p>
