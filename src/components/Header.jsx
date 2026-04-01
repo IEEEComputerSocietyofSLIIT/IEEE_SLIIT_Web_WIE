@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../assets/WIE_logo.png";
+import logo from "../assets/branding/WIE_logo.png";
 
 export default function Header() {
     return(
