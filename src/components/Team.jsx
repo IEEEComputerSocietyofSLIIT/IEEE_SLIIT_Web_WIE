@@ -15,15 +15,17 @@ import Yasasvi from "../assets/committee/current-2026-27/Yasasvi_Ediriweera.jpg"
 import Vihangi from "../assets/committee/current-2026-27/Vihangi_Wijesooriya.jpg";
 import Rayani from "../assets/committee/current-2026-27/Rayani_Yapa.jpg";
 import Methaya from "../assets/committee/current-2026-27/Methaya_Ranasinghe.jpg";
+import Kinkini from "../assets/committee/current-2026-27/IMG-20260416-WA0006 - B. Kinkini B.jpg";
 
 export default function Team() {
     const currentExcom = [
         { name: "Pehansa Ranasinghe", role: "Chairperson", image: Pehansa },
-        { name: "Bulani Wijesena", role: "Vice Chairperson", image: Bulani },
-        { name: "Yasasvi Ediriweera", role: "Secretary", image: Yasasvi },
+        { name: "Bulani Wijesena", role: "Vice Chairperson", image: Bulani, profile: "https://www.linkedin.com/in/bulani-wijesena-7630053b5?utm_source=share_via&utm_content=profile&utm_medium=member_android" },
+        { name: "Yasasvi Ediriweera", role: "Secretary", image: Yasasvi, profile: "https://www.linkedin.com/in/yasasvi-ediriweera-97b0692a4?utm_source=share_via&utm_content=profile&utm_medium=member_ios" },
         { name: "Vihangi Wijesooriya", role: "Treasurer", image: Vihangi },
-        { name: "Rayani Yapa", role: "Editor", image: Rayani },
-        { name: "Methaya Ranasinghe", role: "Assistant Secretary", image: Methaya },
+        { name: "Rayani Yapa", role: "Editor", image: Rayani, profile: "https://www.linkedin.com/in/rayani-yapa?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
+        { name: "Methaya Ranasinghe", role: "Assistant Secretary", image: Methaya, profile: "https://www.linkedin.com/in/methaya-r-68b3bb373?utm_source=share_via&utm_content=profile&utm_medium=member_android" },
+        { name: "Banchana Kinkini Balasuriya", role: "Assistant Treasurer", image: Kinkini },
     ];
 
     const pastExcom202324 = [
@@ -63,28 +65,39 @@ export default function Team() {
                 <h1 className="my-3 text-center font-sans text-4xl font-bold text-primary">Current executive board<span className="text-black">.</span></h1>
                 <p className=" text-gray-600 text-md text-center max-w mb-10">The Executive Board of IEEE WIE Affinity Group 2026/27 of SLIIT.</p>
 
-                <div className="mx-auto mb-14 grid max-w-screen-xl grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
+                <div className="mx-auto mb-14 grid max-w-screen-xl grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-8">
                     {currentExcom.map((member, index) => (
                         <article
                             key={member.name}
-                            className={`rounded-xl bg-white p-3 shadow-lg hover:shadow-xl hover:scale-110 transform translate duration-300 ${
-                                currentExcom.length === 6 && index === 4
+                            className={`rounded-xl bg-white p-3 shadow-lg hover:shadow-xl hover:scale-110 transform translate duration-300 lg:col-span-2 ${
+                                currentExcom.length === 7 && index === 4
                                     ? "lg:col-start-2"
-                                    : currentExcom.length === 6 && index === 5
-                                        ? "lg:col-start-3"
-                                        : ""
+                                    : ""
                             }`}
                         >
-                            <div>
-                                <div className="relative flex items-end overflow-hidden rounded-xl">
-                                    <img src={member.image} alt={member.name} />
-                                </div>
+                            {member.profile ? (
+                                <a href={member.profile} target="_blank" rel="noopener noreferrer">
+                                    <div className="relative flex items-end overflow-hidden rounded-xl">
+                                        <img src={member.image} alt={member.name} />
+                                    </div>
 
-                                <div className="mt-1 p-2">
-                                    <h2 className="text-gray-900 font-semibold text-lg">{member.name}</h2>
-                                    <p className="text-primary mt-1 text-md font-semibold ">{member.role}</p>
+                                    <div className="mt-1 p-2">
+                                        <h2 className="text-gray-900 font-semibold text-lg">{member.name}</h2>
+                                        <p className="text-primary mt-1 text-md font-semibold ">{member.role}</p>
+                                    </div>
+                                </a>
+                            ) : (
+                                <div>
+                                    <div className="relative flex items-end overflow-hidden rounded-xl">
+                                        <img src={member.image} alt={member.name} />
+                                    </div>
+
+                                    <div className="mt-1 p-2">
+                                        <h2 className="text-gray-900 font-semibold text-lg">{member.name}</h2>
+                                        <p className="text-primary mt-1 text-md font-semibold ">{member.role}</p>
+                                    </div>
                                 </div>
-                            </div>
+                            )}
                         </article>
                     ))}
                 </div>
